@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "",
+  "framework": null,
+  "installCommand": "echo 'static site, no install needed'",
+  "buildCommand": "echo 'static site, no build needed'",
   "outputDirectory": "artifacts/api-server/public",
   "rewrites": [
-    {
-      "source": "/((?!.*\\.(?:js|css|svg|json|ico|png|jpg|jpeg|webp|woff|woff2|ttf|eot|txt|map)).*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
